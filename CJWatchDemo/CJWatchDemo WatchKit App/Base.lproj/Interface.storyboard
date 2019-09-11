@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Gea-NC-s6J">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,14 +10,42 @@
     </dependencies>
     <scenes>
         <!--Interface Controller-->
+        <scene sceneID="JMX-XB-dUH">
+            <objects>
+                <controller id="Gea-NC-s6J" customClass="InterfaceController">
+                    <items>
+                        <table alignment="left" id="RuZ-Pl-1VV">
+                            <items>
+                                <tableRow identifier="Row" id="J3J-vZ-DM1" customClass="RowController">
+                                    <group key="rootItem" width="1" alignment="left" id="u6I-Tv-g0a">
+                                        <items>
+                                            <label height="100" alignment="left" text="Label" id="mPv-g7-PAt"/>
+                                        </items>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="titleLabel" destination="mPv-g7-PAt" id="gau-yp-GYc"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="RuZ-Pl-1VV" id="GiV-mY-mcd"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-30" y="359"/>
+        </scene>
+        <!--计数器-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                <controller identifier="计数器" id="AgC-eL-Hgc" customClass="CountInterfaceController">
                     <items>
                         <button width="1" alignment="center" title="0" id="STZ-rr-7rN">
                             <fontDescription key="font" type="boldSystem" pointSize="60"/>
                             <connections>
-                                <action selector="countButtonPressed" destination="AgC-eL-Hgc" id="rCx-Hh-2DB"/>
+                                <action selector="countButtonPressed" destination="AgC-eL-Hgc" id="bQF-rC-Bvk"/>
                             </connections>
                         </button>
                     </items>
@@ -25,17 +53,36 @@
                         <items>
                             <menuItem title="重置" icon="decline" id="2Bh-F7-8hR">
                                 <connections>
-                                    <action selector="resetAction" destination="AgC-eL-Hgc" id="GUJ-d5-qee"/>
+                                    <action selector="resetAction" destination="AgC-eL-Hgc" id="JMR-GB-gnS"/>
                                 </connections>
                             </menuItem>
                         </items>
                     </menu>
                     <connections>
-                        <outlet property="countButton" destination="STZ-rr-7rN" id="xMV-32-v0I"/>
+                        <outlet property="countButton" destination="STZ-rr-7rN" id="VpI-zP-hqy"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--数据传输-->
+        <scene sceneID="Exa-XY-4hq">
+            <objects>
+                <controller identifier="数据传输" id="di5-nL-yfa" customClass="DataInterfaceController">
+                    <items>
+                        <label width="136" alignment="left" numberOfLines="0" id="Wwo-T1-itD"/>
+                        <button width="1" alignment="left" title="send count" id="O4x-Wb-Gmg">
+                            <connections>
+                                <action selector="send" destination="di5-nL-yfa" id="3s6-3t-Sv8"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="label" destination="Wwo-T1-itD" id="cH7-he-lGE"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-120" y="673"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

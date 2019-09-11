@@ -7,13 +7,22 @@
 //
 
 #import "InterfaceController.h"
-#import "Counter.h"
+
+@interface RowController()
+
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *titleLabel;
+
+@end
+
+@implementation RowController
+
+@end
 
 @interface InterfaceController ()
 
-@property (strong, nonatomic) IBOutlet WKInterfaceButton *countButton;
+@property (strong, nonatomic) IBOutlet WKInterfaceTable *table;
 
-@property (nonatomic, strong) Counter *counter;
+@property (nonatomic, strong) NSArray *titles;
 
 @end
 
@@ -24,10 +33,14 @@
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
 
-    self.counter = [Counter sharedInstance];
+    self.titles = @[@"计数器", @"数据传输"];
     
-    [self updateButtonTitle];
+    [_table setNumberOfRows:self.titles.count withRowType:@"Row"];
     
+    [self.titles enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        RowController *controller = [self.table rowControllerAtIndex:idx];
+        [controller.titleLabel setText:obj];
+    }];
 }
 
 - (void)willActivate {
@@ -41,29 +54,8 @@
 }
 
 #pragma mark - actions
-
-/// 点击数量按钮
-- (IBAction)countButtonPressed {
-    
-    [self.counter increase];
-    
-    [self.counter save];
-    
-    [self updateButtonTitle];
-    
-}
-
-/// 长按菜单-点击重置
-- (IBAction)resetAction {
-    
-    [self.counter reset];
-    
-    [self updateButtonTitle];
-}
-
-/// 更新按钮标题
-- (void)updateButtonTitle {
-    [self.countButton setTitle:[NSString stringWithFormat:@"%d", self.counter.count]];
+- (void)table:(WKInterfaceTable *)table didSelectRowAtIndex:(NSInteger)rowIndex {
+    [self pushControllerWithName:self.titles[rowIndex] context:nil];
 }
 
 @end

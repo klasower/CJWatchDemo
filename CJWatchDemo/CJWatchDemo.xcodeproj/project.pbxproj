@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		0290A95323224878003C407A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0290A95223224878003C407A /* AppDelegate.m */; };
 		0290A95623224878003C407A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0290A95523224878003C407A /* ViewController.m */; };
-		0290A95923224878003C407A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0290A95723224878003C407A /* Main.storyboard */; };
 		0290A95B2322487F003C407A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0290A95A2322487F003C407A /* Assets.xcassets */; };
-		0290A95E23224880003C407A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0290A95C23224880003C407A /* LaunchScreen.storyboard */; };
 		0290A96123224880003C407A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0290A96023224880003C407A /* main.m */; };
 		0290A96523224880003C407A /* CJWatchDemo WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0290A96423224880003C407A /* CJWatchDemo WatchKit App.app */; };
 		0290A96B23224880003C407A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0290A96923224880003C407A /* Interface.storyboard */; };
@@ -22,6 +20,9 @@
 		0290A98023224881003C407A /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0290A97F23224881003C407A /* NotificationController.m */; };
 		0290A98223224881003C407A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0290A98123224881003C407A /* Assets.xcassets */; };
 		0290A995232256F5003C407A /* Counter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0290A994232256F5003C407A /* Counter.m */; };
+		02CC42C02327749700ACA05C /* CountInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CC42BF2327749700ACA05C /* CountInterfaceController.m */; };
+		02CC42C32328D6D700ACA05C /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CC42C22328D6D700ACA05C /* DataViewController.m */; };
+		02CC42C62328DC2E00ACA05C /* DataInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CC42C52328DC2E00ACA05C /* DataInterfaceController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,9 +73,7 @@
 		0290A95223224878003C407A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0290A95423224878003C407A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0290A95523224878003C407A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0290A95823224878003C407A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0290A95A2322487F003C407A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0290A95D23224880003C407A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0290A95F23224880003C407A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0290A96023224880003C407A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0290A96423224880003C407A /* CJWatchDemo WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CJWatchDemo WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +92,12 @@
 		0290A98423224881003C407A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		0290A993232256F5003C407A /* Counter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Counter.h; sourceTree = "<group>"; };
 		0290A994232256F5003C407A /* Counter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Counter.m; sourceTree = "<group>"; };
+		02CC42BE2327749700ACA05C /* CountInterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountInterfaceController.h; sourceTree = "<group>"; };
+		02CC42BF2327749700ACA05C /* CountInterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountInterfaceController.m; sourceTree = "<group>"; };
+		02CC42C12328D6D700ACA05C /* DataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
+		02CC42C22328D6D700ACA05C /* DataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
+		02CC42C42328DC2E00ACA05C /* DataInterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataInterfaceController.h; sourceTree = "<group>"; };
+		02CC42C52328DC2E00ACA05C /* DataInterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataInterfaceController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,11 +145,11 @@
 				0290A95223224878003C407A /* AppDelegate.m */,
 				0290A95423224878003C407A /* ViewController.h */,
 				0290A95523224878003C407A /* ViewController.m */,
-				0290A95723224878003C407A /* Main.storyboard */,
 				0290A95A2322487F003C407A /* Assets.xcassets */,
-				0290A95C23224880003C407A /* LaunchScreen.storyboard */,
 				0290A95F23224880003C407A /* Info.plist */,
 				0290A96023224880003C407A /* main.m */,
+				02CC42C12328D6D700ACA05C /* DataViewController.h */,
+				02CC42C22328D6D700ACA05C /* DataViewController.m */,
 			);
 			path = CJWatchDemo;
 			sourceTree = "<group>";
@@ -172,6 +177,10 @@
 				0290A98123224881003C407A /* Assets.xcassets */,
 				0290A98323224881003C407A /* Info.plist */,
 				0290A98423224881003C407A /* PushNotificationPayload.apns */,
+				02CC42BE2327749700ACA05C /* CountInterfaceController.h */,
+				02CC42BF2327749700ACA05C /* CountInterfaceController.m */,
+				02CC42C42328DC2E00ACA05C /* DataInterfaceController.h */,
+				02CC42C52328DC2E00ACA05C /* DataInterfaceController.m */,
 			);
 			path = "CJWatchDemo WatchKit Extension";
 			sourceTree = "<group>";
@@ -286,9 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0290A95E23224880003C407A /* LaunchScreen.storyboard in Resources */,
 				0290A95B2322487F003C407A /* Assets.xcassets in Resources */,
-				0290A95923224878003C407A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02CC42C32328D6D700ACA05C /* DataViewController.m in Sources */,
 				0290A95623224878003C407A /* ViewController.m in Sources */,
 				0290A96123224880003C407A /* main.m in Sources */,
 				0290A95323224878003C407A /* AppDelegate.m in Sources */,
@@ -326,8 +334,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02CC42C02327749700ACA05C /* CountInterfaceController.m in Sources */,
 				0290A995232256F5003C407A /* Counter.m in Sources */,
 				0290A97D23224881003C407A /* ExtensionDelegate.m in Sources */,
+				02CC42C62328DC2E00ACA05C /* DataInterfaceController.m in Sources */,
 				0290A97A23224881003C407A /* InterfaceController.m in Sources */,
 				0290A98023224881003C407A /* NotificationController.m in Sources */,
 			);
@@ -349,22 +359,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0290A95723224878003C407A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0290A95823224878003C407A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0290A95C23224880003C407A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0290A95D23224880003C407A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 		0290A96923224880003C407A /* Interface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -568,6 +562,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 8FV3Q4A37J;
 				INFOPLIST_FILE = CJWatchDemo/Info.plist;
@@ -587,6 +582,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 8FV3Q4A37J;
 				INFOPLIST_FILE = CJWatchDemo/Info.plist;

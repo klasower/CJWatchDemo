@@ -1,18 +1,18 @@
 //
-//  InterfaceController.h
+//  DataInterfaceController.h
 //  CJWatchDemo WatchKit Extension
 //
-//  Created by chujian.zheng on 2019/9/6.
+//  Created by chujian.zheng on 2019/9/11.
 //  Copyright © 2019 BIT Net Technology(Tian Jin)co.,Ltd. All rights reserved.
 //
 
 #import <WatchKit/WatchKit.h>
 #import <Foundation/Foundation.h>
 
-@interface RowController: NSObject
+NS_ASSUME_NONNULL_BEGIN
+
+@interface DataInterfaceController : WKInterfaceController
 
 @end
 
-@interface InterfaceController : WKInterfaceController
-
-@end
+NS_ASSUME_NONNULL_END
