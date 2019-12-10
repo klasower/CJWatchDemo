@@ -35,6 +35,8 @@
 #pragma mark - UI
 - (void)buildUI {
     
+    self.view.backgroundColor = UIColor.whiteColor;
+    
     self.textField = [[UITextField alloc] initWithFrame:CGRectMake(10, 100, [UIScreen mainScreen].bounds.size.width - 20, 44.0)];
     self.textField.borderStyle = UITextBorderStyleRoundedRect;
     [self.view addSubview:self.textField];

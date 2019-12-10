@@ -7,7 +7,6 @@
 //
 
 #import "DataInterfaceController.h"
-#import "Counter.h"
 #import <WatchConnectivity/WatchConnectivity.h>
 
 @interface DataInterfaceController ()<WCSessionDelegate>
@@ -26,7 +25,7 @@
 }
 
 - (void)willActivate {
-    // This method is called when watch view controller is about to be visible to user
+
     [super willActivate];
     
     if ([WCSession isSupported]) {
@@ -37,15 +36,11 @@
 }
 
 - (void)didDeactivate {
-    // This method is called when watch view controller is no longer visible
+
     [super didDeactivate];
 }
 
 - (IBAction)send {
-//
-//    [[Counter sharedInstance] increase];
-//
-//    [[Counter sharedInstance] save];
     
     WCSession *session = [WCSession defaultSession];
     
@@ -65,14 +60,6 @@
 }
 
 - (void)session:(WCSession *)session activationDidCompleteWithState:(WCSessionActivationState)activationState error:(nullable NSError *)error  API_AVAILABLE(ios(9.3)){
-}
-
-- (void)sessionDidBecomeInactive:(WCSession *)session {
-    
-}
-
-- (void)sessionDidDeactivate:(WCSession *)session {
-    
 }
 
 @end

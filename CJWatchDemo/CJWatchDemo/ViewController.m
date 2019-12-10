@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "DataViewController.h"
+#import "DataSharingViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -23,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.titles = @[@"数据传输"];
+    self.titles = @[@"数据传输", @"数据共享"];
     
     [self buildUI];
 }
@@ -65,6 +66,9 @@
     
     if ([title isEqualToString:@"数据传输"]) {
         DataViewController *vc = [[DataViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if ([title isEqualToString:@"数据共享"]) {
+        DataSharingViewController *vc = [[DataSharingViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

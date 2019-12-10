@@ -33,7 +33,7 @@
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
 
-    self.titles = @[@"计数器", @"数据传输"];
+    self.titles = @[@"计数器", @"数据传输", @"数据共享"];
     
     [_table setNumberOfRows:self.titles.count withRowType:@"Row"];
     

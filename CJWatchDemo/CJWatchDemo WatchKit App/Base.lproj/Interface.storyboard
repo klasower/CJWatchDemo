@@ -115,5 +115,28 @@
             </objects>
             <point key="canvasLocation" x="468" y="345"/>
         </scene>
+        <!--数据共享-->
+        <scene sceneID="NU8-dL-6KB">
+            <objects>
+                <controller identifier="数据共享" id="QE3-Vq-gDc" customClass="DataSharingInterfaceController">
+                    <items>
+                        <label width="136" alignment="left" id="CAv-rC-CZc"/>
+                    </items>
+                    <menu key="menu" id="V0A-hQ-kws">
+                        <items>
+                            <menuItem title="刷新" icon="share" id="z3Q-n9-GFK">
+                                <connections>
+                                    <action selector="update" destination="QE3-Vq-gDc" id="uG8-34-cAj"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="label" destination="CAv-rC-CZc" id="mbZ-EZ-Xuw"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="125" y="63"/>
+        </scene>
     </scenes>
 </document>

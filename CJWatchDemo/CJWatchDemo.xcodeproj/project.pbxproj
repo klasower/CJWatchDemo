@@ -23,6 +23,8 @@
 		02CC42C02327749700ACA05C /* CountInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CC42BF2327749700ACA05C /* CountInterfaceController.m */; };
 		02CC42C32328D6D700ACA05C /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CC42C22328D6D700ACA05C /* DataViewController.m */; };
 		02CC42C62328DC2E00ACA05C /* DataInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CC42C52328DC2E00ACA05C /* DataInterfaceController.m */; };
+		02CC42CB232A29CA00ACA05C /* DataSharingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CC42CA232A29CA00ACA05C /* DataSharingViewController.m */; };
+		02CC42CE232A32D500ACA05C /* DataSharingInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CC42CD232A32D500ACA05C /* DataSharingInterfaceController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,12 @@
 		02CC42C22328D6D700ACA05C /* DataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
 		02CC42C42328DC2E00ACA05C /* DataInterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataInterfaceController.h; sourceTree = "<group>"; };
 		02CC42C52328DC2E00ACA05C /* DataInterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataInterfaceController.m; sourceTree = "<group>"; };
+		02CC42C7232A1E3400ACA05C /* CJWatchDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CJWatchDemo.entitlements; sourceTree = "<group>"; };
+		02CC42C8232A270300ACA05C /* CJWatchDemo WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "CJWatchDemo WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		02CC42C9232A29CA00ACA05C /* DataSharingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataSharingViewController.h; sourceTree = "<group>"; };
+		02CC42CA232A29CA00ACA05C /* DataSharingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataSharingViewController.m; sourceTree = "<group>"; };
+		02CC42CC232A32D500ACA05C /* DataSharingInterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataSharingInterfaceController.h; sourceTree = "<group>"; };
+		02CC42CD232A32D500ACA05C /* DataSharingInterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataSharingInterfaceController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +149,7 @@
 		0290A95023224878003C407A /* CJWatchDemo */ = {
 			isa = PBXGroup;
 			children = (
+				02CC42C7232A1E3400ACA05C /* CJWatchDemo.entitlements */,
 				0290A95123224878003C407A /* AppDelegate.h */,
 				0290A95223224878003C407A /* AppDelegate.m */,
 				0290A95423224878003C407A /* ViewController.h */,
@@ -150,6 +159,8 @@
 				0290A96023224880003C407A /* main.m */,
 				02CC42C12328D6D700ACA05C /* DataViewController.h */,
 				02CC42C22328D6D700ACA05C /* DataViewController.m */,
+				02CC42C9232A29CA00ACA05C /* DataSharingViewController.h */,
+				02CC42CA232A29CA00ACA05C /* DataSharingViewController.m */,
 			);
 			path = CJWatchDemo;
 			sourceTree = "<group>";
@@ -167,6 +178,7 @@
 		0290A97723224881003C407A /* CJWatchDemo WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				02CC42C8232A270300ACA05C /* CJWatchDemo WatchKit Extension.entitlements */,
 				0290A9922322566D003C407A /* Model */,
 				0290A97823224881003C407A /* InterfaceController.h */,
 				0290A97923224881003C407A /* InterfaceController.m */,
@@ -181,6 +193,8 @@
 				02CC42BF2327749700ACA05C /* CountInterfaceController.m */,
 				02CC42C42328DC2E00ACA05C /* DataInterfaceController.h */,
 				02CC42C52328DC2E00ACA05C /* DataInterfaceController.m */,
+				02CC42CC232A32D500ACA05C /* DataSharingInterfaceController.h */,
+				02CC42CD232A32D500ACA05C /* DataSharingInterfaceController.m */,
 			);
 			path = "CJWatchDemo WatchKit Extension";
 			sourceTree = "<group>";
@@ -261,12 +275,22 @@
 				TargetAttributes = {
 					0290A94D23224878003C407A = {
 						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					0290A96323224880003C407A = {
 						CreatedOnToolsVersion = 10.3;
 					};
 					0290A97223224881003C407A = {
 						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -326,6 +350,7 @@
 				02CC42C32328D6D700ACA05C /* DataViewController.m in Sources */,
 				0290A95623224878003C407A /* ViewController.m in Sources */,
 				0290A96123224880003C407A /* main.m in Sources */,
+				02CC42CB232A29CA00ACA05C /* DataSharingViewController.m in Sources */,
 				0290A95323224878003C407A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +362,7 @@
 				02CC42C02327749700ACA05C /* CountInterfaceController.m in Sources */,
 				0290A995232256F5003C407A /* Counter.m in Sources */,
 				0290A97D23224881003C407A /* ExtensionDelegate.m in Sources */,
+				02CC42CE232A32D500ACA05C /* DataSharingInterfaceController.m in Sources */,
 				02CC42C62328DC2E00ACA05C /* DataInterfaceController.m in Sources */,
 				0290A97A23224881003C407A /* InterfaceController.m in Sources */,
 				0290A98023224881003C407A /* NotificationController.m in Sources */,
@@ -486,6 +512,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "CJWatchDemo WatchKit Extension/CJWatchDemo WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8FV3Q4A37J;
 				INFOPLIST_FILE = "CJWatchDemo WatchKit Extension/Info.plist";
@@ -494,7 +521,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bit.CJWatchDemo.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.klasower.demo.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -507,6 +534,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "CJWatchDemo WatchKit Extension/CJWatchDemo WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8FV3Q4A37J;
 				INFOPLIST_FILE = "CJWatchDemo WatchKit Extension/Info.plist";
@@ -515,7 +543,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bit.CJWatchDemo.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.klasower.demo.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -528,12 +556,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8FV3Q4A37J;
 				IBSC_MODULE = CJWatchDemo_WatchKit_Extension;
 				INFOPLIST_FILE = "CJWatchDemo WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bit.CJWatchDemo.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.klasower.demo.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -545,12 +575,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8FV3Q4A37J;
 				IBSC_MODULE = CJWatchDemo_WatchKit_Extension;
 				INFOPLIST_FILE = "CJWatchDemo WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bit.CJWatchDemo.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.klasower.demo.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -563,6 +595,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = CJWatchDemo/CJWatchDemo.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 8FV3Q4A37J;
 				INFOPLIST_FILE = CJWatchDemo/Info.plist;
@@ -571,9 +604,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bit.CJWatchDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.klasower.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "通用调试";
+				PROVISIONING_PROFILE_SPECIFIER = KlasowerDemo;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -583,6 +616,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = CJWatchDemo/CJWatchDemo.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 8FV3Q4A37J;
 				INFOPLIST_FILE = CJWatchDemo/Info.plist;
@@ -591,9 +625,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bit.CJWatchDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.klasower.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "通用调试";
+				PROVISIONING_PROFILE_SPECIFIER = KlasowerDemo;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
